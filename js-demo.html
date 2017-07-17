@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var giantWoman = function() {
+    document.getElementById('lady').width='400';
+    document.getElementById('lady').height='400';
+  }
+  </script>
+</head>
+<body>
+
+<h2>JavaScript Events and Functions: Resizing Ms. Lady</h2>
+
+<p>This example resizes my picture on mouseover:</p>
+
+<img id="lady" src="https://megane22.github.io/portfolio/lady-face.PNG" width="200" height="200" name="LadyFace"
+onmouseover="giantWoman()"
+onmouseout="LadyFace.width='200';LadyFace.height='200';" />
+
+
+
+</body>
+</html>
