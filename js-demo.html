@@ -8,7 +8,13 @@
   }
 
   var switchPicture = function() {
-    document.getElementById('lady').src =
+    var currPic = document.getElementById('lady').src;
+    if (currPic == "https://megane22.github.io/portfolio/gd.jpg") {
+      document.getElementById('lady').src = "https://megane22.github.io/portfolio/lady-face.PNG";
+    }
+    else {
+      document.getElementById('lady').src = "https://megane22.github.io/portfolio/gd.jpg";
+    }
   }
   </script>
 </head>
@@ -20,7 +26,8 @@
 
 <img id="lady" src="https://megane22.github.io/portfolio/lady-face.PNG" width="200" height="200" name="LadyFace"
 onmouseover="giantWoman()"
-onmouseout="LadyFace.width='200';LadyFace.height='200';" />
+onmouseout="LadyFace.width='200';LadyFace.height='200';"
+onclick="switchPicture()" />
 
 <button onclick="this.innerHTML = 'WOW!'">Hey</button>
 
